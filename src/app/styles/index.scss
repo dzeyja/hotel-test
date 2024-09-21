@@ -1,4 +1,11 @@
+@import './reset.scss';
+
 .App {
     font-size: 15px;
     color: green($color: #000000)
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
 }
