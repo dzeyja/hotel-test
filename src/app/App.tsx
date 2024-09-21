@@ -1,9 +1,10 @@
-import React from 'react'
+import { AppRoutes } from './providers/routes/ui/AppRoutes'
+import './styles/index.scss'
 
 export const App = () => {
     return (
-        <div>
-            Hello world
+        <div className='App'>
+            <AppRoutes />
         </div>
     )
 }
