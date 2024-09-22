@@ -1,7 +1,7 @@
 import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './Navbar.module.scss'
 import { Link } from 'react-router-dom'
-import { Button } from 'react-bootstrap'
+import Logo from 'shared/assets/icons/scb804piu7r52v1r1lf3o79dqtanu837.svg'
 
 interface NavbarProps {
     className?: string
@@ -12,9 +12,10 @@ export const Navbar = ({className}: NavbarProps) => {
       <div className={classNames(cls.Navbar, {}, [className])}>
         <div className="container">
             <nav className={cls.navigation}>
-                <div className={cls.logo}>
-                    РИВЬЕРА
+                <div>
+                    Ривьера
                 </div>
+                {/* <Logo className={cls.logo}/> */}
                 <div className={cls.links}>
                     <Link to='/'>ГЛАВНАЯ</Link>
                     <Link to='/about'>О НАС</Link>

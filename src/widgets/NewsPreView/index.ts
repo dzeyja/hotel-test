@@ -1,0 +1,1 @@
+export {NewsPreView} from './ui/NewsPreView'

@@ -1,0 +1,45 @@
+.NewsPreView {
+    margin-top: 50px;
+    padding: 30px 0;
+    background-color: #f6f2f2;
+}
+
+.newsPreView {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentNews {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.newsCard {
+    width: 25%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.cardTitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+
+.title {
+    font: var(--font-l);
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 100px; 
+    height: 3px; 
+    background-color: black; 
+    margin-top: 5px; 
+}

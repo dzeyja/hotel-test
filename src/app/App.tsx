@@ -1,6 +1,7 @@
 import { Navbar } from 'widgets/Navbar'
 import { AppRoutes } from './providers/routes/ui/AppRoutes'
 import './styles/index.scss'
+import { Footer } from 'widgets/Footer'
 
 export const App = () => {
     return (
@@ -9,6 +10,7 @@ export const App = () => {
                 <div>
                     <AppRoutes />
                 </div>
+                <Footer />
         </div>
     )
 }
