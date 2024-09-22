@@ -3,8 +3,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 .App {
-    font-size: 15px;
-    color: green($color: #000000)
+    font: var(--font-m);
 }
 
 .container {

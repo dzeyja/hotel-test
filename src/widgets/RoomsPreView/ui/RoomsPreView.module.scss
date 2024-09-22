@@ -1,0 +1,50 @@
+.roomsHeader {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font: var(--font-l);
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 100px; 
+    height: 3px; 
+    background-color: black; 
+    margin-top: 5px; 
+}
+
+.roomsContent {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.roomCart {
+    width: 30%;
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+    
+}
+
+.cardTitle {
+    font: var(--font-l);
+    margin-bottom: 10px;
+}
+
+.textContent {
+    padding: 20px;
+    width: 100%;
+}
+
+.img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 250px;
+}
