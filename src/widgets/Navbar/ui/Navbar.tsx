@@ -12,12 +12,11 @@ export const Navbar = ({className}: NavbarProps) => {
       <div className={classNames(cls.Navbar, {}, [className])}>
         <div className="container">
             <nav className={cls.navigation}>
-                <div>
-                    Ривьера
-                </div>
+                <Link to='/'>
+                    <img src="https://kazanriviera.ru/upload/iblock/675/scb804piu7r52v1r1lf3o79dqtanu837.svg" width={130} alt="" />
+                </Link>
                 {/* <Logo className={cls.logo}/> */}
                 <div className={cls.links}>
-                    <Link to='/'>ГЛАВНАЯ</Link>
                     <Link to='/about'>О НАС</Link>
                     <Link to='/rooms'>НОМЕРА</Link>
                     <Link to='/prices'>ЦЕНЫ</Link>
