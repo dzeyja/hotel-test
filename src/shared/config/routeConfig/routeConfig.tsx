@@ -1,4 +1,5 @@
 import { AboutPage } from "pages/AboutPage"
+import { ContactsPage } from "pages/ContactsPage"
 import { MainPage } from "pages/MainPage"
 import { RestourantsPage } from "pages/RestourantsPage"
 import { RoomDatailPage } from "pages/RoomDetailPage"
@@ -12,16 +13,18 @@ export enum AppRoutes {
     ROOMS = 'rooms',
     ROOM = 'room',
     SERVICES = 'services',
-    RESTOURANTS = 'restourants'
+    RESTOURANTS = 'restourants',
+    CONTACTS = 'contacts'
 }
 
 export const RoutePaths: Record<AppRoutes, string> = {
-    [AppRoutes.MAIN]: '/hotel-test',
+    [AppRoutes.MAIN]: '/',
     [AppRoutes.ABOUT]: '/about',
     [AppRoutes.ROOMS]: '/rooms',
     [AppRoutes.ROOM]: '/rooms/:id',
     [AppRoutes.SERVICES]: '/services',
-    [AppRoutes.RESTOURANTS]: '/restourants'
+    [AppRoutes.RESTOURANTS]: '/restourants',
+    [AppRoutes.CONTACTS]: '/contacts'
 }
 
 export const RouteConfig: Record<AppRoutes, RouteProps> = {
@@ -48,5 +51,9 @@ export const RouteConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.RESTOURANTS]: {
         path: RoutePaths.restourants,
         element: <RestourantsPage />
+    },
+    [AppRoutes.CONTACTS]: {
+        path: RoutePaths.contacts,
+        element: <ContactsPage />
     }
 }

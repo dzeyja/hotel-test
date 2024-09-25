@@ -11,7 +11,7 @@ export const RoomCart = ({room}: RoomCartProps) => {
     const navigate = useNavigate()
     
   return (
-    <div onClick={() => navigate(`/rooms/${room.id}`)} className={cls.roomCard}>
+    <div className={cls.roomCard}>
         <div className={cls.imageWrapper}>
             <img src={room.img} className={cls.img}  />
         </div>
@@ -26,8 +26,7 @@ export const RoomCart = ({room}: RoomCartProps) => {
                 {room.roomPrice}
             </div>
             <div className={cls.actions}>
-                <Button>Забронировать</Button>
-                <Button>Подробнее</Button>
+                <Button onClick={() => navigate(`/rooms/${room.id}`)}>Подробнее</Button>
             </div>
         </div>
     </div>

@@ -12,7 +12,7 @@ export const Navbar = ({className}: NavbarProps) => {
       <div className={classNames(cls.Navbar, {}, [className])}>
         <div className="container">
             <nav className={cls.navigation}>
-                <Link to='/hotel-test'>
+                <Link to='/'>
                     <img src="https://kazanriviera.ru/upload/iblock/675/scb804piu7r52v1r1lf3o79dqtanu837.svg" width={130} alt="" />
                 </Link>
                 {/* <Logo className={cls.logo}/> */}
@@ -21,8 +21,6 @@ export const Navbar = ({className}: NavbarProps) => {
                     <Link to='/rooms'>НОМЕРА</Link>
                     <Link to='/services'>УСЛУГИ</Link>
                     <Link to='/restourants'>РЕСТОРАНЫ</Link>
-                    <Link to='/news'>НОВОСТИ</Link>
-                    <Link to='/reviews'>ОТЗЫВЫ</Link>
                     <Link to='/contacts'>КОНТАКТЫ</Link>
                 </div>
             </nav>

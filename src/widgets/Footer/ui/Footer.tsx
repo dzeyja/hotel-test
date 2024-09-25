@@ -11,12 +11,13 @@ export const Footer = ({className}: FooterProps) => {
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
         <div className={styles.footerLogo}>
-          <img src="logo.png" alt="Логотип" />
+          <img src="https://kazanriviera.ru/upload/iblock/675/scb804piu7r52v1r1lf3o79dqtanu837.svg" alt="Логотип" />
           <p>Отель Ривьера</p>
         </div>
         <div className={styles.footerNav}>
           <h4>Навигация</h4>
           <ul>
+            <li><Link to='/'>Главная</Link></li>
             <li><Link to='/about'>О нас</Link></li>
             <li><Link to='/rooms'>Номера</Link></li>
             <li><Link to='/services'>Услуги</Link></li>
