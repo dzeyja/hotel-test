@@ -1,4 +1,5 @@
 import { AboutPage } from "pages/AboutPage"
+import { BookedFormPage } from "pages/BookedFormPage"
 import { ContactsPage } from "pages/ContactsPage"
 import { MainPage } from "pages/MainPage"
 import { RestourantsPage } from "pages/RestourantsPage"
@@ -14,7 +15,8 @@ export enum AppRoutes {
     ROOM = 'room',
     SERVICES = 'services',
     RESTOURANTS = 'restourants',
-    CONTACTS = 'contacts'
+    CONTACTS = 'contacts',
+    BOOKED = 'booked'
 }
 
 export const RoutePaths: Record<AppRoutes, string> = {
@@ -24,7 +26,8 @@ export const RoutePaths: Record<AppRoutes, string> = {
     [AppRoutes.ROOM]: '/rooms/:id',
     [AppRoutes.SERVICES]: '/services',
     [AppRoutes.RESTOURANTS]: '/restourants',
-    [AppRoutes.CONTACTS]: '/contacts'
+    [AppRoutes.CONTACTS]: '/contacts',
+    [AppRoutes.BOOKED]: '/booked-form'
 }
 
 export const RouteConfig: Record<AppRoutes, RouteProps> = {
@@ -55,5 +58,9 @@ export const RouteConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.CONTACTS]: {
         path: RoutePaths.contacts,
         element: <ContactsPage />
+    },
+    [AppRoutes.BOOKED]: {
+        path: RoutePaths.booked,
+        element: <BookedFormPage />
     }
 }

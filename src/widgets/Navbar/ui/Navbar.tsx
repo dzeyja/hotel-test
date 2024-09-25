@@ -2,6 +2,7 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './Navbar.module.scss'
 import { Link } from 'react-router-dom'
 import Logo from 'shared/assets/icons/scb804piu7r52v1r1lf3o79dqtanu837.svg'
+import { Button } from 'react-bootstrap'
 
 interface NavbarProps {
     className?: string
@@ -23,6 +24,9 @@ export const Navbar = ({className}: NavbarProps) => {
                     <Link to='/restourants'>РЕСТОРАНЫ</Link>
                     <Link to='/contacts'>КОНТАКТЫ</Link>
                 </div>
+                <Link to='/booked-form'>
+                    <Button>Забронировать</Button>
+                </Link>
             </nav>
          </div>
     </div>

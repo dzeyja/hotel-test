@@ -1,0 +1,14 @@
+.title {
+    font: var(--font-l);
+    color: var(--main-color);
+    margin: 30px 0;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+    margin-top: 5px;
+}

@@ -1,5 +1,8 @@
 import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './Carts.module.scss'
+import img1 from 'shared/assets/icons/icons8-bed-100.png'
+import img2 from 'shared/assets/icons/icons8-копилка-100.png'
+import img3 from 'shared/assets/icons/icons8-список-100.png'
 
 interface CartsProps {
     className?: string
@@ -10,7 +13,7 @@ export const Carts = ({className}: CartsProps) => {
     <div className="container">
         <div className={classNames(cls.Carts, {}, [className])}>
             <div className={cls.Cart}>
-                <img src="http://dauksh.fastsite.ru/themes/corp-2018/images/about/cr.png" alt="" />
+                <img src={img1} alt="" />
                 <div className={cls.title}>
                     Комфортабельные номера
                 </div>
@@ -21,7 +24,7 @@ export const Carts = ({className}: CartsProps) => {
                 </div>
             </div>
             <div className={cls.Cart}>
-                <img src="http://dauksh.fastsite.ru/themes/corp-2018/images/about/eco.png" alt="" />
+                <img src={img2} alt="" />
                 <div className={cls.title}>
                     Доступные цены
                 </div>
@@ -31,7 +34,7 @@ export const Carts = ({className}: CartsProps) => {
                 </div>
             </div>
             <div className={cls.Cart}>
-                <img src="http://dauksh.fastsite.ru/themes/corp-2018/images/about/list.png" alt="" />
+                <img src={img3} alt="" />
                 <div className={cls.title}>
                     Широкий спектр услуг
                 </div>
