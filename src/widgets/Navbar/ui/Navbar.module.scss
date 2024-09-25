@@ -16,6 +16,17 @@
     margin-left: 60px;
 }
 
+.links a {
+    color: #000;
+
+    transition: color .2s linear;
+}
+
+.links a:hover {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
 .navigation {
     display: flex;
     align-items: center;

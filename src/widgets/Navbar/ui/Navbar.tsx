@@ -19,9 +19,8 @@ export const Navbar = ({className}: NavbarProps) => {
                 <div className={cls.links}>
                     <Link to='/about'>О НАС</Link>
                     <Link to='/rooms'>НОМЕРА</Link>
-                    <Link to='/prices'>ЦЕНЫ</Link>
                     <Link to='/services'>УСЛУГИ</Link>
-                    <Link to='/gallery'>ФОТОГАЛЕРЕЯ</Link>
+                    <Link to='/restourants'>РЕСТОРАНЫ</Link>
                     <Link to='/news'>НОВОСТИ</Link>
                     <Link to='/reviews'>ОТЗЫВЫ</Link>
                     <Link to='/contacts'>КОНТАКТЫ</Link>

@@ -7,6 +7,7 @@
 
 .title {
     font: var(--font-l);
+    color: var(--main-color)
 }
 
 .title::after {
@@ -14,7 +15,7 @@
     display: block;
     width: 100px; 
     height: 3px; 
-    background-color: black; 
+    background-color: var(--main-color); 
     margin-top: 5px; 
 }
 
@@ -27,7 +28,7 @@
 }
 
 .roomCart {
-    width: 30%;
+    width: 33%;
     box-shadow: var(--card-shadows);
     border-radius: 10px;
     
@@ -35,6 +36,15 @@
 
 .cardTitle {
     font: var(--font-l);
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.roomPrice {
+    font-weight: 700;
+}
+
+.cardSuptitle {
     margin-bottom: 10px;
 }
 

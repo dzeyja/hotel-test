@@ -1,6 +1,7 @@
 .title {
     margin-top: 30px;
-    font: var(--font-l)
+    font: var(--font-l);
+    color: var(--main-color)
 }
 
 .title::after {
@@ -8,6 +9,6 @@
     display: block;
     width: 100px; 
     height: 3px; 
-    background-color: black; 
+    background-color: var(--main-color); 
     margin-top: 5px; 
 }

@@ -10,7 +10,7 @@
    border-radius: 10px;
    width: 30%;
    text-align: center;
-   padding: 30px;
+   padding: 20px 15px;
    box-shadow: var(--card-shadows);
 }
 
@@ -21,6 +21,7 @@
 .title {
     font: var(--font-l);
     margin: 20px 0;
+    color: var(--main-color);
 }
 
 .suptitle {

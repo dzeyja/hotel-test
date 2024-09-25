@@ -1,0 +1,1 @@
+export {RoomDatailPage} from './ui/RoomDatailPage'

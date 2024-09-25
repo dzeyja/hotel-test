@@ -1,14 +1,17 @@
 import { Button } from 'react-bootstrap'
 import cls from './RoomCart.module.scss'
 import { IRooms } from '../api/rooms'
+import { useNavigate } from 'react-router-dom'
 
 interface RoomCartProps {
     room: IRooms
 }
 
 export const RoomCart = ({room}: RoomCartProps) => {
+    const navigate = useNavigate()
+    
   return (
-    <div className={cls.roomCard}>
+    <div onClick={() => navigate(`/rooms/${room.id}`)} className={cls.roomCard}>
         <div className={cls.imageWrapper}>
             <img src={room.img} className={cls.img}  />
         </div>
